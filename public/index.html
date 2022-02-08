@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <div class="logo">
+                
+                <h3>chat</h3>
+            </div>
+            <p id="name">your name</p>
+
+        </div>
+
+        <!---------------------------------------------->
+        <div class="chat-section">
+            <div class="main-wrapper">
+                <div class="chat-content">
+                    <div class="message">
+                        <div class="message-row other-message">
+ <!--                            <div class="message-title">
+                                <span>Tahani</span>
+                            </div>
+                            <div class="message-text">
+                                hello
+                            </div>
+                            <div class="message-time">
+                                April 28
+                            </div>
+ -->
+                        </div>
+                        <div class="message-row you-message">
+ <!--                         <div class="message-title">
+                                <span>user 1</span>
+                            </div>
+                            <div class="message-text">
+                                ok
+                            </div>
+                            <div class="message-time">
+                                April 28
+                            </div>
+-->  
+                        </div>
+                    </div>
+                </div>
+
+                <!----------------------------------------->
+                <form class="msg-text">
+                    <input type="text" name="msg" id="msg"
+                    placeholder="Type Massage Here...." autocomplete="off">
+                    <button id="btn-send">
+                        <i >Send</i>
+                    </button>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
